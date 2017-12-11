@@ -1,0 +1,3 @@
+enNum:20
+myLife:3
+myScore1:0

@@ -1,0 +1,19 @@
+package com.test1;
+import java.awt.*;
+import javax.swing.*;
+import javax.swing.*;
+public class Demo9_2 extends JFrame {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+	public Demo9_2(){
+		
+	}
+
+}
+

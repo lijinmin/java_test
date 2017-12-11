@@ -1,0 +1,16 @@
+/**
+ * 图片拷贝
+ */
+package com.test4;
+import java.io.*;
+public class Demo11_4 {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+// 因为是二进制文件，所以只能用字节流
+	}
+
+}

@@ -1,0 +1,16 @@
+/**
+ * 字符流
+ */
+package com.test5;
+import java.io.*;
+public class Demo11_5 {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

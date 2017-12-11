@@ -1,0 +1,28 @@
+/**
+ * 这是第一个服务器端 监听端口9999，可以接收客户端发过来的数据
+ */
+package com.test1;
+import java.io.IOException;
+import java.net.*;
+public class MyServer1 {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+	public MyServer1(){
+		try {
+//			在9999号端口监听
+			ServerSocket ss = new ServerSocket();
+//			等待某个客户端链接
+			ss.accept();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+}

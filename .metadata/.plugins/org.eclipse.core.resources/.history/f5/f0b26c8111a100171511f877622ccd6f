@@ -1,0 +1,23 @@
+/**
+ * 缓冲字符流
+ */
+package com.test6;
+import java.io.*;
+public class Demo11_6 {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		BufferedReader br = null;
+		try{
+			FileReader fr = new FileReader("/home/min/桌面/tesdt/color1.rb");
+			br = new BufferedReader(fr);
+		}catch(Exception e){
+			
+		}
+
+	}
+
+}

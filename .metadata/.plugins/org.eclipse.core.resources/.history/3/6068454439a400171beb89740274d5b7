@@ -1,0 +1,62 @@
+package com.test2;
+import java.io.*;
+import java.util.*;
+import javax.sound.sampled.*;
+public class TestAudio {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		AvPlayWave av = new AvPlayWave("/home/min/workspace/Class14/src/ly-17-03-14-09.mp3");
+		av.start();
+	}
+
+}
+class AvPlayWave extends Thread{
+	private String filename = null;
+//	构造函数
+	public AvPlayWave(String wavefile){
+		filename = wavefile;
+	}
+	
+	public void run(){
+		File soundFile = new File(filename);
+		AudioInputStream audio = null;
+		try {
+			audio = AudioSystem.getAudioInputStream(soundFile);
+			System.out.println("start");
+		} catch (UnsupportedAudioFileException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		AudioFormat format = audio.getFormat();
+		SourceDataLine dataLine = null;
+		DataLine.Info info = new DataLine.Info(dataLine.getClass(), format);
+		
+		try {
+			dataLine = (SourceDataLine) AudioSystem.getLine(info);
+			dataLine.open(format);
+		} catch (LineUnavailableException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		dataLine.start();
+		int nBytesRead = 0;
+		byte[] abData = new byte[1024];
+		while(nBytesRead != -1)
+		{
+			try {
+				nBytesRead = audio.read(abData);
+				dataLine.write(abData, 0, nBytesRead);
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+	}
+}

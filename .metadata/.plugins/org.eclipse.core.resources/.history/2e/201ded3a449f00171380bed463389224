@@ -1,0 +1,37 @@
+/**
+ * FileOutputStream
+ */
+package com.test3;
+import java.io.*;
+public class Demo11_3 {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		File f = new File("/home/min/桌面/tesdt/color2.rb");
+		if(!f.exists()){
+			f.createNewFile();
+		}
+		FileOutputStream flw = null;
+		FileInputStream flr = null;
+		try {
+			flw = new FileOutputStream(f);
+			String s = "4、完成waf各分析点下钻页面逻辑";
+			flw.write(s.getBytes());
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}finally{
+			try {
+				flw.close();
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+
+	}
+
+}

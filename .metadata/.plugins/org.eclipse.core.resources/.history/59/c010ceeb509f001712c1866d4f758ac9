@@ -1,0 +1,24 @@
+/**
+ * 字符流
+ */
+package com.test5;
+import java.io.*;
+public class Demo11_5 {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		FileReader fr = null;
+		FileWriter fw = null;
+		try{
+			fr = new FileReader("/home/min/桌面/tesdt/color1.rb");
+			fw = new FileWriter("/home/min/桌面/tesdt/color2.rb");
+		}catch(Exception e){
+			
+		}
+
+	}
+
+}

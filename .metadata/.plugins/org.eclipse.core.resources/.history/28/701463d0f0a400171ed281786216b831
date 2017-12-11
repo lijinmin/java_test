@@ -1,0 +1,16 @@
+/**
+ * 这是第一个服务器端 监听端口9999，可以接收客户端发过来的数据
+ */
+package com.test1;
+
+public class MyServer1 {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

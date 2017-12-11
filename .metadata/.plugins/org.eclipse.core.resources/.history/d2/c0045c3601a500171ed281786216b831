@@ -1,0 +1,19 @@
+/**
+ * 这是一个客户端程序 可以连接服务器端
+ */
+package com.test1;
+import java.net.*;
+public class MyClient1 {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+	
+	public MyClient1(){
+		Socket s = new Socket("127.0.0.1",9999);
+	}
+}

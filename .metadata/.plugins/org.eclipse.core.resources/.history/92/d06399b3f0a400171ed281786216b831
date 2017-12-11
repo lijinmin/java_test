@@ -1,0 +1,16 @@
+/**
+ * 这是第一个服务器端
+ */
+package com.test1;
+
+public class MyServer1 {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

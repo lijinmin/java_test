@@ -1,0 +1,28 @@
+package com.test1;
+import java.awt.*;
+import javax.swing.*;
+import java.awt.event.*;
+public class Demo9_2 extends JFrame {
+
+	/**
+	 * @param args
+	 * 事件处理
+	 */
+	MyPanel mp = null;
+	JButton jb1=null;
+	JButton jb2 = null;
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+	public Demo9_2(){
+		mp = new MyPanel();
+		jb1 = new JButton("黑色");
+		jb2 = new JButton("红色");
+	}
+
+}
+class MyPanel extends JPanel{
+	
+}
+
